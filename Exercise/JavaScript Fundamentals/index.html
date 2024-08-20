@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="object"></p>
+    <p id="array"></p>
+    <p id="if-else">Good Evening!</p>
+    <p id="for-loop"></p>
+
+    <script>
+
+        const cars_object = { type: "Fiat", model: "500", color: "white" };
+        document.getElementById("object").innerHTML = "The car type is " + cars_object.type;
+
+        const cars_array = ["Saab", "Volvo", "BMW"];
+        document.getElementById("array").innerHTML = cars_array
+
+        if (new Date().getHours() < 18) {
+            document.getElementById("if-else").innerHTML = "Good day!";
+        }
+
+        let text = "";
+        for (let i = 0; i < cars_array.length; i++) {
+            text += cars_array[i] + "<br>";
+        }
+        document.getElementById("for-loop").innerHTML = text;
+    </script>
+</body>
+
+</html>
