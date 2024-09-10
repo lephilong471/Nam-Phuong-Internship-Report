@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pagination{
+  margin: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.pagination li{
+  list-style:none;
+  margin-inline: 15px;
+  font-weight:500;
+}
+
+.pagination li:hoveR{
+  cursor:pointer;
+}
+
+.pagination .active{
+  color: red;
+  font-weight: bold;
+}
+
