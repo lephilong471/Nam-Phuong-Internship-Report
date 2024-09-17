@@ -7,12 +7,15 @@ interface TableDataProps {
   body: string
 }
 
-export const getTableData = (data: Array<TableDataProps>, pageNumber: number, rowLimit: number) => {
-    const result = []
+export const getTableData = (data: Array<TableDataProps> | undefined, pageNumber: number, rowLimit: number) => {
+    
+  const result = []
+  if(data){
     for (let i = (pageNumber - 1) * rowLimit; i < pageNumber * rowLimit; i++) {
       result.push(data[i])
     }
-    return result
+  }
+ return result
   }
 
   
